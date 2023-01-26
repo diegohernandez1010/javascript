@@ -9,7 +9,16 @@ else if (PreguntaBello=='no'){
 alert('No te creo')}
 // console.log(PreguntaBello);
 
+// Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es
+// menor. No considerar el caso en que ambos números son iguales.
 
+let primerNumero = prompt ('indicame el primer numero');
+let segundoNumero = prompt ('indicame el segundo numero');
+let NumeroMenor = Math.min (primerNumero, segundoNumero);
+alert (NumeroMenor);
+// if (primerNumero<segundoNumero) 
+// let NumeroMenor = (primerNumero<segundoNumero)
+// alert ();
 
 
 // Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm
