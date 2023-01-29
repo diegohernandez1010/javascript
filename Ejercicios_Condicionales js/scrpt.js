@@ -1,4 +1,4 @@
-// Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en
+1// Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en
 // caso de contestar sí, responder “Ciertamente”, en caso de contestar no,
 // responder: “No te creo”.
 
@@ -8,7 +8,7 @@ alert('ciertamente')}
 else if (PreguntaBello=='no'){
 alert('No te creo')}
 
-// Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm
+2// Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm
 const numeroUsuarioPalabra = prompt("dame un numero divisible entre 2")
 // console.log(typeof numeroUsuarioPalabra);
 console.log((parseFloat(numeroUsuarioPalabra)) % 2)
@@ -18,13 +18,13 @@ if (((parseFloat(numeroUsuarioPalabra)) % 2) === 0) { alert("es divisible :v") }
     
 }
 
-// Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert.
+3// Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert.
 
 const numeroUsuario = prompt (" ingrese un numero, le indicaremos si es par o no")
 if (((parseFloat(numeroUsuario))%2) === 0) {alert("su numero es par")}
 else if (((parseFloat(numeroUsuario)) % 2) != 0) {alert("su numero es impar")}
 
-// Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir "Ganaste un premio", en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.
+4// Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir "Ganaste un premio", en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.
 
 const NumeroCliente = prompt ('digite su numero de cliente');
 if (NumeroCliente=='1000'){
@@ -38,7 +38,7 @@ else if (!(NumeroCliente==1000, "")){
 
 }
 
-// Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es
+5// Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es
 // menor. No considerar el caso en que ambos números son iguales.
 alert('Te dire cual número es menor');
 let primerNumero = prompt ('indicame el primer numero');
@@ -51,7 +51,7 @@ alert("el numero menor es " + NumeroMenor);
 //     numeroMenor=segundoNumero;
 //    alert(numeroMenor);
 
-// Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es
+6// Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es
 // el número mayor. Considerar el caso en que 2 números sean iguales.
 alert('Te dire cual es el número mayor')
 let numero1 = parseInt(prompt('ingrese el primer numero'));
@@ -62,11 +62,9 @@ if(  numero1 > numero2 && numero1 > numero3){
 }
 else if (numero2 > numero1 && numero2 > numero3){
 mayor=numero2;}
-
-
 alert(mayor + ' este es el numero mayor');
 
-// Requerir al usuario que ingrese un día de la semana e imprimir un
+7// Requerir al usuario que ingrese un día de la semana e imprimir un
 // mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje
 // diferente si es sábado o domingo. Si el día ingresado no es ninguno de
 // esos, imprimir otro mensaje.
