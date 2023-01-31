@@ -76,7 +76,7 @@ if ( diaSemana== "lunes"){ console.log ("buen inicio de semana");}
 else if (diaSemana=="viernes"){ console.log("Por fin, viernessss!");}
 else if (diaSemana == "sabado"){ console.log("buen finde")}
 else if (diaSemana== "domingo"){console.log("buen finde")}
-else {console.log("buena semana")}
+else {console.log("No ingresaste información.")}
 
 8// Solicitar al usuario una calificación (entre 1 y 10). Luego se debe
 // comprobar que el número efectivamente esté en ese rango, si no lo está
@@ -112,9 +112,9 @@ let oreo = 10;
 let Kit = 15;
 let Brownie = 20; 
 let sinTopping= sin;
-let oreoTopping = (sin+oreo);console.log(oreoTopping);
-let KitTopping=(sin+Kit); console.log(KitTopping);
-let BrownieTopping = (sin+Brownie); console.log(BrownieTopping);
+let oreoTopping = (sin+oreo);
+let KitTopping=(sin+Kit); 
+let BrownieTopping = (sin+Brownie); 
 if (Costo=="sin topping"){
     alert(sinTopping+"MXN")}
 else if (Costo== "oreo"){
@@ -123,3 +123,99 @@ else if (Costo=="kitkat"){alert(KitTopping+"MXN")}
 else if (Costo =="brownie"){alert(BrownieTopping+"MXN")}
 else {alert("no tenemos ese topping, lo sentimos. "+ sin+"MXN")}
 
+// 10. Un conocido portal de educación en tecnología está ofreciendo
+// programas para aprender a desarrollar aplicaciones. Escribe un programa
+// que le indique a la persona interesada cuánto deberá pagar
+// mensualmente de acuerdo a la opción elegida.
+// El programa educativo contempla 3 diferentes niveles, cada uno con su
+// costo mensual:
+// ● Course: $4999 MXN
+// ● Carrera $3999 MXN
+// ● Master: $2999 MXN
+// Adicionalmente preguntar si cuenta con alguna beca y aplicar el
+// descuento correspondiente al precio final.
+// ● Beca Facebook: 20% de descuento.
+// ● Beca Google: 15% de descuento.
+// ● Beca Jesua: 50% de descuento.
+// Finalmente, además del precio mensual con descuento, indicar al usuario
+// cuánto gastaría en total por el curso elegido, tomando en cuenta las
+// siguientes duraciones:
+// ● Course: 2 meses
+// ● Carrera 6 meses
+// ● Master: 12 meses
+
+
+let programa = prompt("Elige uno de nuestros programas, course, carrera o master. A continuación te indicaremos en valor del curso");
+let beca = prompt ("Si cuenta con alguna beca, ingrese el nombre de la misma a continuación")
+//valor mensual//
+let course = 4999;
+let carrera = 3999;
+let master = 2999;
+//descuentos course//
+let courseFacebook = (course - 999);//descuento 20%
+let courseGoogle = (course - 749);//descuento 15%
+let courseJesua = (course - 2499); //descuento 50%
+//dcto carrera//
+let carreraFacebook = (carrera- 998);//descuento 20%
+let carreraGoogle = (carrera - 799);//descuento 15%
+let carreraJesua= (carrera -1999);//descuento 50%
+//dcto master//
+let masterFacebook = ( master - 599);//descuento 20%
+let masterGoogle = (master - 449);//descuento 15%
+let masterJesua = ( master -1499);//descuento 50%
+//mensualidades course facebook con el  20%//
+let dosCourseFacebook = (courseFacebook*2);//2 meses
+let seisCourseFacebook = (courseFacebook*6);//6 meses
+let doceCourseFacebook = (courseFacebook*12);//12 meses
+//mensualidades course google con el 15%
+let dosCourseGoogle = (courseGoogle*2);
+let seisCourseGoogle =(courseGoogle*6);
+let doceCourseGoogle = (courseGoogle*12);
+//mensualidades course jesua con el 50%
+let dosCourseJesua = (courseJesua*2);
+let seisCourseJesua = (courseJesua*6);
+let doceCourseJesua= (courseJesua*12);//course facebook descuento50%
+//mensualidades carrera facebook con el 20%//
+let dosCarreraFacebook = (carreraFacebook*2);// 2 meses
+let seisCarreraFacebook = (carreraFacebook*6);//6 meses
+let doceCarreraFacebook = (carreraFacebook*12)//12 meses
+//mensualidad carrera google con el 15%
+let dosCarreraGoogle = (carreraGoogle*2);
+let seisCarreraGoogle = (carreraGoogle*6);
+let doceCarreraGoogle = (carreraGoogle*12);
+// mensualidad carrera Jesua con el 50%
+let dosCarreraJesua = (carreraJesua*2);
+let seisCarreraJesua= (carreraJesua*6);
+let doceCarreraJesua= (carreraJesua*12);
+// mensualidad master facebook 20%
+let dosMasterFacebook = (masterFacebook*2);
+let seisMasterFacebook= (masterFacebook*6);
+let doceMasterFacebook = (masterFacebook*12);
+//mensualidad master google 15%
+let dosMasterGoogle =(masterGoogle*2);
+let seisMasterGoogle=(masterGoogle*6);
+let doceMasterGoogle=(masterGoogle*12);
+//mensualidad master jesua 50%
+let dosMasterJesua = (masterJesua*2);
+let seisMasterJesua =(masterJesua*6);
+let doceMasterJesua = (masterJesua*12);
+
+//course facebook 20%
+if (programa =="course" && beca=="facebook"){alert( course +" MXN valor mes; " + courseFacebook + " MXN valor 20% Dcto.; " + dosCourseFacebook+" MXN x 2 meses; " + seisCourseFacebook+ " MXN x 6 meses; " + doceCourseFacebook + " MXN x 12 meses")}//ok
+//course google 15%
+else if(programa=="course" && beca== "google"){alert(course +" MXN valor mes; " + courseGoogle + " MXN valor 15% Dcto.; " + dosCourseGoogle+" MXN x 2 meses; " + seisCourseGoogle + " MXN x 6 meses; " + doceCourseGoogle + " MXN x 12 meses")}//ok
+//course jesua 50%
+else if (programa== "course" && beca == "jesua"){alert(course +" MXN valor mes; " +  courseJesua + " MXN valor 50% Dcto.; " + dosCourseJesua+" MXN x 2 meses; " + seisCourseJesua + " MXN x 6 meses; " + doceCourseJesua + " MXN x 12 meses")}//ok
+//carrera facebook 20%
+else if (programa== "carrera" && beca=="facebook"){alert(carrera + " MXN valor mes; "+ carreraFacebook+ " MXN valor 20% Dcto.; " + dosCarreraFacebook+" MXN x 2 meses; " + seisCarreraFacebook + " MXN x 6 meses; " + doceCarreraFacebook + " MXN x 12 meses")}//ok
+//carrea google 15%
+else if ( programa== "carrera" && beca =="google"){alert(carrera + " MXN valor mes; "+ carreraGoogle+ " MXN valor 15% Dcto.; " + dosCarreraGoogle+" MXN x 2 meses; " + seisCarreraGoogle + " MXN x 6 meses; " + doceCarreraGoogle + " MXN x 12 meses")}//ok
+//carrera jesua 50%
+else if (programa == "carrera" && beca == "jesua"){alert(carrera + " MXN valor mes; "+ carreraJesua+ " MXN valor 50% Dcto.; " + dosCarreraJesua+" MXN x 2 meses; " + seisCarreraJesua + " MXN x 6 meses; " + doceCarreraJesua + " MXN x 12 meses")}//ok
+//master facebook 20%
+else if (programa=="master" && beca== "facebook"){alert(master + " MXN valor mes; "+ masterFacebook+ " MXN valor 20% Dcto.; " + dosMasterFacebook+" MXN x 2 meses; " + seisMasterFacebook + " MXN x 6 meses; " + doceMasterFacebook + " MXN x 12 meses")}//ok
+//master google 15%
+else if (programa=="master" && beca== "google"){alert(master + " MXN valor mes; "+ masterGoogle+ " MXN valor 15% Dcto.; " + dosMasterGoogle+" MXN x 2 meses; " + seisMasterGoogle + " MXN x 6 meses; " + doceMasterGoogle + " MXN x 12 meses")}//ok 
+// master jesua 50%
+else if(programa=="master" && beca== "jesua"){alert(master + " MXN valor mes; "+ masterJesua+ " MXN valor 50% Dcto.; " + dosMasterJesua+" MXN x 2 meses; " + seisMasterJesua + " MXN x 6 meses; " + doceMasterJesua + " MXN x 12 meses")}
+else{ alert("revisa los datos ingresados")}
