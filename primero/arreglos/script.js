@@ -11,21 +11,12 @@ console.log(arregloPalabra);
 // let ajajaja = Math.floor(Math.random()*(max - min)+min);
 // console.log(ajajaja);
 
-function aleatorio(){
-const arry=[];
+let aleatorio =[];
+
 for (let i=0; i<10; i++){
-  arry.push(Math.floor(Math.random()*100));
+  aleatorio.push(Math.floor(Math.random()*100));
 }
-return arry;
-}
+console.log(aleatorio);
 
 
 
-// function aleatorio(min, max){
-//     return Math.floor(Math.random() * (max - min) + min);
-//   }
-
-//   for (let i =1; i<=10;++i){
-//     console.log(aleatorio(1,4));
-//   }
-  
