@@ -219,3 +219,4 @@ else if (programa=="master" && beca== "google"){alert(master + " MXN valor mes; 
 // master jesua 50%
 else if(programa=="master" && beca== "jesua"){alert(master + " MXN valor mes; "+ masterJesua+ " MXN valor 50% Dcto.; " + dosMasterJesua+" MXN x 2 meses; " + seisMasterJesua + " MXN x 6 meses; " + doceMasterJesua + " MXN x 12 meses")}
 else{ alert("revisa los datos ingresados")}
+//11
